@@ -56,10 +56,13 @@
                     <div class="hero-overlay bg-opacity-60"></div>
                     <div class="hero-content text-center text-neutral-content">
                         <div class="py-16">
-                            <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with <br><span
-                                    class="text-[#1DD100]">P Paribahan</span></h1>
-                            <p class="mb-4">Yes, you can run unit tests and view the results directly within the app.
-                                <br>The integrated testing features allow for a streamlined .
+                            <h1 class="mb-5 text-3xl md:text-6xl font-bold">End-to-End Travel with <br><span
+                                    class="text-[#1DD100] md:mt-6 block">P Paribahan</span></h1>
+                            <p class="mb-4">Looking for an online booking portal to book a bus, train or ferry tickets
+                                <br>
+                                to travel in Malaysia and Singapore?
+                                You have come to the right place! Malaysia and Singapore <br>are among the top countries
+                                in Southeast Asia with an established tourism industry.
                             </p>
                             <button onclick="buyTicket()" id="buy-ticket"
                                 class="btn bg-[#1DD100] text-black border-none">Buy Ticket</button>
@@ -71,12 +74,12 @@
         <section class="my-16">
             <div class="container mx-auto">
                 <h2 class="text-3xl text-center font-bold">Best offers for you</h2>
-                <div class="flex gap-4 mt-8">
+                <div class="flex flex-col md:flex-row gap-4 mt-8">
                     <div class="flex items-center flex-1 bg-[#FFBF0F] rounded-lg">
                         <div class="card-body">
                             <h2 class="card-title text-3xl font-bold">15% OFF</h2>
-                            <h4>on your next purchase</h4>
-                            <h6>use by January 2024</h6>
+                            <h4>On Your Next Journey</h4>
+                            <h6>Use By Jan 2024</h6>
                         </div>
                         <img src="images/cupon-devider.png" alt="">
                         <div class="card-body">
@@ -87,15 +90,18 @@
                     <div class="flex items-center flex-1 bg-[#F78C9C] rounded-lg">
                         <div class="card-body">
                             <h2 class="card-title text-3xl font-bold">20% OFF</h2>
-                            <h4>on your next purchase</h4>
-                            <h6>use by January 2024</h6>
+                            <h4>On Your Next Journey</h4>
+                            <h6>Use By Jan 2024</h6>
                         </div>
                         <img src="images/cupon-devider.png" alt="">
                         <div class="card-body">
-                            <h2 id="couple20" class="card-title">Couple 20</h2>
+                            <h2 id="couple20" class="card-title">Couple20</h2>
                             <p>Coupon Code</p>
                         </div>
                     </div>
+                </div>
+                <div class="flex items-center justify-center mt-7">
+                    <button class="btn border-[#1DD100] text-[#1DD100] hover:bg-transparent">See All Offers</button>
                 </div>
             </div>
         </section>
@@ -108,35 +114,59 @@
                 <div class="">
                     <diV class="text-center">
                         <h2 class="text-3xl font-bold mb-4 pt-10">P.H Paribahan</h2>
-                        <p class="pb-10">Yes, you can run unit tests and view the results directly within the app.
-                            <br>The integrated testing features allow for a streamlined .</p>
+                        <p class="pb-10">Apart from the developing and maintaining various attractions all over the
+                            countries, Malaysia tourism and Singapore <br> tourism also encourage the expansion of the
+                            public transportation system in their respective countries.
+                        </p>
                     </diV>
-                    <div class="grid gap-4 grid-cols-4 bg-white p-8 rounded-md">
-                        <div class="col-span-3">
-                            <div class="flex justify-around">
-                                <div class="flex">
-                                    <div>
-                                        <img class="mr-2" src="images/bus-logo.png" alt="">
+                    <div class="grid gap-4 md:grid-cols-4 bg-white p-8 rounded-md">
+                        <div class="md:col-span-3">
+                            <div>
+                                <div class="flex flex-col md:flex-row justify-between">
+                                    <div class="flex">
+                                        <div>
+                                            <img class="mr-2" src="images/bus-logo.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold">Greenline Paribahan</h4>
+                                            <p class="text-sm">Coach-009-WEB ! AC_Business</p>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <h4 class="font-bold">Greenline Paribahan</h4>
-                                        <p class="text-sm">Coach-009-WEB ! AC_Business</p>
+                                    <div class="">
+                                        <div class="flex flex-row">
+                                            <img src="images/seat-green.png" alt="">
+                                            <p class="ml-3" id="seat-left">8</p>
+                                            <span class="ml-3">Seat Left</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="flex">
-                                    <img src="images/seat-green.png" alt="">
-                                    <p id="seat-left">8<span>Seat Left</span></p>
+                            </div>
+                            <div class="mt-4">
+                                <div class="flex justify-between">
+                                    <h4>Route</h4>
+                                    <h4>Dhaka - Sylhet</h4>
+                                </div>
+                                <div class="flex justify-between">
+                                    <h4>Departure Time</h4>
+                                    <h4>9:00PM</h4>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="md:flex justify-between mt-4">
+                                    <h4 class="bg-slate-300 py-2 px-5 rounded-md">Boarding Point - Laxmipur</h4>
+                                    <h4 class="bg-slate-300 py-2 px-5 rounded-md">Droping Point - Bogura</h4>
+                                    <h4 class="bg-slate-300 py-2 px-5 rounded-md">Est. Time - 11 Hours</h4>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="items-center justify-center">
+                        <div class=" flex flex-col items-center justify-center">
                             <img src="images/fare.png" alt="">
                             <div>
                                 <span id="price">500</span>
                                 <span>Taka</span>
                             </div>
-                            <p>PerSeat</p>
+                            <p>Per Seat</p>
                         </div>
                     </div>
                 </div>
@@ -298,25 +328,26 @@
                                     <h4>Price</h4>
                                 </div>
                                 <div id="selected-seat" class="mb-3">
-                                    
+
                                 </div>
                             </div>
-                            
+
 
                             <div class="mb-3 flex justify-between">
                                 <h4>Total Price</h4>
-                                <h4 >BDT<span id="total-price">0</span></h4>
+                                <h4>BDT<span id="total-price">0</span></h4>
                             </div>
-                            <div class="mb-3">
+                            <!-- <div class="mb-3">
                                 <label class="input input-bordered flex items-center gap-2 border-0">
                                     <input type="text" class="grow" placeholder="Have any copun?" />
-                                    <button onclick="grandTotal()" class="bg-[#1DD100]  rounded text-[10px] text-white">Apply</button>
+                                    <button onclick="grandTotal()"
+                                        class="bg-[#1DD100]  rounded text-[10px] text-white">Apply</button>
                                 </label>
 
-                            </div>
+                            </div> -->
                             <div class="mb-3 flex justify-between">
                                 <h4>Grand Total</h4>
-                                <h4 >BDT<span id="grand-price">0</span></h4>
+                                <h4>BDT<span id="grand-price">0</span></h4>
                             </div>
                             <div>
                                 <button class="btn w-full">Next</button>

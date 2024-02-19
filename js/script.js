@@ -51,10 +51,8 @@ for (const seat of allSeats) {
         setInnerText('seat-left', availableSeat);
         setInnerText('grand-price', grandPrice);
 
-        
     });
 
-    
 }
 
 function setInnerText(idName, value) {

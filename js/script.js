@@ -1,6 +1,6 @@
 
 const allSeats = document.getElementsByClassName('seat-div');
-let availableSeat = 8;
+let availableSeat = 32;
 
 for (const seat of allSeats) {
     seat.addEventListener('click', function(event) {

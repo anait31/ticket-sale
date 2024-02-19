@@ -11,9 +11,6 @@ for (const seat of allSeats) {
         const priceIs = document.getElementById('price');
         const priceText = priceIs.innerText;
         const price = parseInt(priceText);
-        console.log(price);
-
-
         const selectedSeat = document.getElementById('selected-seat');
         const selectedSeatList = document.createElement('div');
         selectedSeatList.style.display = 'flex';
@@ -29,17 +26,38 @@ for (const seat of allSeats) {
         p2.innerText = price;
         selectedSeatList.appendChild(p2);
 
+        event.target.style.backgroundColor = '#1DD100';
+
         selectedSeat.appendChild(selectedSeatList);
-
-
         const totalPrice = document.getElementById('total-price').innerText;
+
         const totalPriceis = parseInt(totalPrice);
 
-        document.getElementById('total-price').innerText = totalPriceis+ price;
+        const sum = totalPriceis + price;
+
+        const grandPriceis = document.getElementById('grand-price').innerText;
+        const conGrandPrice = parseInt(grandPriceis);
+        const grandPrice = sum;
+
+        const seatLeftis = document.getElementById('seat-left').innerText;
+        const seatLeft = parseInt(seatLeftis);
+        if(seatLeft < 1 ) {
+            alert('Seat Finished, Please wait for next trip. Thank you :)');
+            return;
+        }
+
+        document.getElementById('total-price').innerText = sum;
+
         setInnerText('seat-left', availableSeat);
+        setInnerText('grand-price', grandPrice);
+
+        
     });
+
+    
 }
 
 function setInnerText(idName, value) {
     document.getElementById(idName).innerText = value;
 }
+

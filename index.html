@@ -80,7 +80,7 @@
                         </div>
                         <img src="images/cupon-devider.png" alt="">
                         <div class="card-body">
-                            <h2 class="card-title">NEW15</h2>
+                            <h2 id="new15" class="card-title">NEW15</h2>
                             <p>Coupon Code</p>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                         </div>
                         <img src="images/cupon-devider.png" alt="">
                         <div class="card-body">
-                            <h2 class="card-title">Couple 20</h2>
+                            <h2 id="couple20" class="card-title">Couple 20</h2>
                             <p>Coupon Code</p>
                         </div>
                     </div>
@@ -305,18 +305,21 @@
 
                             <div class="mb-3 flex justify-between">
                                 <h4>Total Price</h4>
-                                <h4 id="total-price">0</h4>
+                                <h4 >BDT<span id="total-price">0</span></h4>
                             </div>
                             <div class="mb-3">
                                 <label class="input input-bordered flex items-center gap-2 border-0">
                                     <input type="text" class="grow" placeholder="Have any copun?" />
-                                    <button class="bg-[#1DD100]  rounded text-[10px] text-white">Apply</button>
+                                    <button onclick="grandTotal()" class="bg-[#1DD100]  rounded text-[10px] text-white">Apply</button>
                                 </label>
 
                             </div>
-                            <div>
+                            <div class="mb-3 flex justify-between">
                                 <h4>Grand Total</h4>
-                                <h4 id="grand-total"></h4>
+                                <h4 >BDT<span id="grand-price">0</span></h4>
+                            </div>
+                            <div>
+                                <button class="btn w-full">Next</button>
                             </div>
                         </div>
                     </div>

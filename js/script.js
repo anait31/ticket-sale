@@ -2,11 +2,15 @@
 const allSeats = document.getElementsByClassName('seat-div');
 let availableSeat = 32;
 
+let selectedSeat1 = [];
 for (const seat of allSeats) {
     seat.addEventListener('click', function(event) {
         availableSeat -= 1;
-
-        const seatSerial = event.target.innerText;
+        selectedSeat1.push(event.target.innerText);
+        if(selectedSeat1.length > 4) {
+            return alert('Seat Limit Finished');
+        }else {
+            const seatSerial = event.target.innerText;
 
         const priceIs = document.getElementById('price');
         const priceText = priceIs.innerText;
@@ -50,6 +54,7 @@ for (const seat of allSeats) {
 
         setInnerText('seat-left', availableSeat);
         setInnerText('grand-price', grandPrice);
+        }
 
     });
 
